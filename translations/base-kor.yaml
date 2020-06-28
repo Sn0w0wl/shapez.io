@@ -50,7 +50,7 @@ steamPage:
             [*] 향후 더 많은 컨텐츠
         [/list]
 
-        [b] 예정된 컨탠츠 및 커뮤니티 제안[/b]
+        [b] 예정된 컨텐츠 및 커뮤니티 제안[/b]
 
         이 게임은 오픈 소스입니다. 따라서 누구나 기여할 수 있습니다! 또한, 커뮤니티의 제안을 [b]많이[/b] 듣고 있습니다! 가능한 많이 읽고 많이 반영하도록 노력하겠습니다.
 
@@ -114,7 +114,7 @@ demoBanners:
     # This is the "advertisement" shown in the main menu and other various places
     title: 무료 버전
     intro: >-
-        유료 버전을 구매해서 모든 컨탠츠를 사용해 보세요!
+        유료 버전을 구매해서 모든 컨텐츠를 사용해 보세요!
 
 mainMenu:
     play: 시작
@@ -216,7 +216,7 @@ dialogs:
 
     featureRestriction:
         title: 데모 버전
-        desc: 데모 버전에는 없는 컨탠츠(<feature>)로 시도했습니다. 유료 버전을 구입해서 모든 컨텐츠를 사용해보세요!
+        desc: 데모 버전에는 없는 컨텐츠(<feature>)로 시도했습니다. 유료 버전을 구입해서 모든 컨텐츠를 사용해보세요!
 
     oneSavegameLimit:
         title: 저장파일 개수 제한
@@ -262,7 +262,7 @@ dialogs:
         desc: 알아볼 수 있는 이름을 지어주세요. 도형의 <strong>단축키</strong>도 포함할 수 있습니다. (<a href="https://viewer.shapez.io" target="_blank">여기서</a> 만들 수 있습니다.)
 
     markerDemoLimit:
-        desc: 데모 버전에서는 마커를 2개 까지만 놓을 수 있습니다. 유료 버전을 구입하면 마커를 무제한으로 놓을 수 있습니다!
+        desc: 데모 버전에서는 경유지를 2개 까지만 놓을 수 있습니다. 유료 버전을 구입하면 경유지를 무제한으로 놓을 수 있습니다!
 
     exportScreenshotWarning:
         title: 스크린샷으로 내보내기
@@ -383,9 +383,9 @@ ingame:
 
     # Map markers
     waypoints:
-        waypoints: 마커
+        waypoints: 경유지
         hub: 중앙 블럭
-        description: 마커를 좌클릭해서 그곳으로 가고, 우클릭해서 삭제합니다.<br><br><keybinding>을 눌러 지금 있는 곳에 마커를 놓거나 <strong>우클릭해서</strong> 원하는 곳에 놓으세요.
+        description: 경유지를 좌클릭해서 그곳으로 가고, 우클릭해서 삭제합니다.<br><br><keybinding>을 눌러 지금 있는 곳에 경유지를 놓거나 <strong>우클릭해서</strong> 원하는 곳에 놓으세요.
         creationSuccessNotification: Marker has been created.
 
     # Interactive tutorial
@@ -760,7 +760,7 @@ keybindings:
 
         mapZoomIn: 확대
         mapZoomOut: 축소
-        createMarker: 마커 놓기
+        createMarker: 경유지 만들기
 
         menuOpenShop: 업그레이드
         menuOpenStats: 통계
