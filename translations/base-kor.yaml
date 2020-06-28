@@ -749,7 +749,7 @@ keybindings:
         placement: 놓기
         massSelect: 여러 개 선택
         buildings: 건물 쇼트컷
-        placementModifiers: 배치 수정기
+        placementModifiers: 배치 방법
 
     mappings:
         confirm: 확인
@@ -793,12 +793,12 @@ keybindings:
         massSelectCopy: 영역 복사
         massSelectCut: Cut area
 
-        placementDisableAutoOrientation: 자동 회전 끄기
-        placeMultiple: 배치 모드에 있기
-        placeInverse: 자동 벨트 회전 뒤집기
+        placementDisableAutoOrientation: 벨트 방향 고정하기
+        placeMultiple: 계속 배치하기
+        placeInverse: 벨트 진행 방향을 반대로 설치
         exportScreenshot: Export whole Base as Image
         mapMoveFaster: Move Faster
-        lockBeltDirection: Enable belt planner
+        lockBeltDirection: 벨트 설치 유도기 사용
         switchDirectionLockSide: "Planner: Switch side"
         pipette: Pipette
 
