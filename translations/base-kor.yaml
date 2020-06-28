@@ -253,13 +253,13 @@ dialogs:
         desc: >-
             큰 공장을 지을 때 유용한 키바인딩이 많습니다!
             아래를 확인하세요.<strong>나머지 키바인딩도 확인해보세요!</strong>!<br><br>
-            <code class='keybinding'>CTRL</code> + Drag: 영역을 선택해서 복사/삭제하세요.<br>
-            <code class='keybinding'>SHIFT</code>: 한꺼번에 여러 개의 건물을 배치하세요.<br>
-            <code class='keybinding'>ALT</code>: 설치된 컨베이어 벨트의 방향을 바꾸세요.<br>
+            <code class='keybinding'>CTRL</code> + Drag: 영역을 선택해서 복사/삭제할 수 있고,<br>
+            <code class='keybinding'>SHIFT</code>: 한꺼번에 여러개를 배치할 수 있으며,<br>
+            <code class='keybinding'>ALT</code>: 벨트 설치 방향을 반대로 할 수 있습니다.<br>
 
     createMarker:
         title: 새로운 마커
-        desc: Give it a meaningful name, you can also include a <strong>short key</strong> of a shape (Which you can generate <a href="https://viewer.shapez.io" target="_blank">here</a>)
+        desc: 알아볼 수 있는 이름을 지어주세요. 도형의 <strong>단축키</strong>도 포함할 수 있습니다. (<a href="https://viewer.shapez.io" target="_blank">여기서</a> 만들 수 있습니다.)
 
     markerDemoLimit:
         desc: 데모 버전에서는 마커를 2개 까지만 놓을 수 있습니다. 유료 버전을 구입하면 마커를 무제한으로 놓을 수 있습니다!
@@ -267,8 +267,9 @@ dialogs:
     exportScreenshotWarning:
         title: Export screenshot
         desc: >-
-            You requested to export your base as a screenshot. Please note that this can
-            be quite slow for a big base and even crash your game!
+            당신의 기지를 스크린샷 으로 내보내 주라고 하셨습니다.  
+            기지가 클경우 꽤나 느릴 수 있고,
+            게임이 튕길 수 있다는 걸 알아주세요!
 
 ingame:
     # This is shown in the top left corner and displays useful keybindings in
@@ -285,20 +286,20 @@ ingame:
         placeBuilding: 건물 놓기
         createMarker: 마커 놓기
         delete: 삭제
-        pasteLastBlueprint: Paste last blueprint
-        lockBeltDirection: Enable belt planner
-        plannerSwitchSide: Flip planner side
-        cutSelection: Cut
-        copySelection: Copy
-        clearSelection: Clear Selection
-        pipette: Pipette
+        pasteLastBlueprint: 최근에 복사한 블루프린트 붙여넣기
+        lockBeltDirection: 벨트 설치 유도기 사용
+        plannerSwitchSide: 유도 방향 바꾸기
+        cutSelection: 자르기
+        copySelection: 복사
+        clearSelection: 선택 취소
+        pipette: 같은 블럭 들기
 
     # Everything related to placing buildings (I.e. as soon as you selected a building
     # from the toolbar)
     buildingPlacement:
         # Buildings can have different variants which are unlocked at later levels,
         # and this is the hint shown when there are multiple variants available.
-        cycleBuildingVariants: <key>를 눌러 변형된 버전 선택
+        cycleBuildingVariants: <key>를 눌러 다른 형태를 선택
 
         # Shows the hotkey in the ui, e.g. "Hotkey: Q"
         hotkeyLabel: >-
@@ -399,17 +400,17 @@ ingame:
                 이것은 방치형 게임이 <strong>아닙니다!</strong> 추출기를 더 놓아 목표를 빨리 달성하세요.<br><br>팁: <strong>SHIFT</strong>를 눌러 여러 개의 추출기를 놓고 <strong>R</strong>로 회전 시키세요.
 
     colors:
-        red: Red
-        green: Green
-        blue: Blue
-        yellow: Yellow
-        purple: Purple
-        cyan: Cyan
-        white: White
-        uncolored: No color
+        red: 빨강
+        green: 초록
+        blue: 파랑
+        yellow: 노랑
+        purple: 보라
+        cyan: 청록
+        white: 하양
+        uncolored: 무색
     shapeViewer:
-        title: Layers
-        empty: Empty
+        title: 레이어
+        empty: 비어있음
 
 # All shop upgrades
 shopUpgrades:
@@ -441,11 +442,11 @@ buildings:
     miner: # Internal name for the Extractor
         default:
             name: &miner 추출기
-            description: 도형 또는 색소 위에 놓아서 추출하기
+            description: 도형 또는 염료 위에 놓아서 추출하기
 
         chainable:
             name: 체인 추출기
-            description: 도형 또는 색소 위에 놓아서 추출하기. 여러 개를 연결할 수 있음.
+            description: 도형 또는 염료 위에 놓아서 추출하기. 여러 개를 이을 수 있음.
 
     underground_belt: # Internal name for the Tunnel
         default:
@@ -463,48 +464,50 @@ buildings:
 
         compact:
             name: 컴팩트 연결기
-            description: 컨베이어 벨트 2개를 1개로 연결한다.
+            description: 컨베이어 벨트 2개를 1개로 연결합니다.
 
         compact-inverse:
             name: 컴팩트 연결기
-            description: 컨베이어 벨트 2개를 1개로 연결한다.
+            description: 컨베이어 벨트 2개를 1개로 연결합니다.
 
     cutter:
         default:
             name: &cutter 절단기
-            description: 도형을 위에서 아래로 2개로 나눈다. <strong>만약, 출력한 2개중 1개만 사용하면 기계가 멈추니 사용하지 않는 나머지 한 개는 버릴 것</strong>
+            description: 도형을 세로로 자릅니다.
+            <strong>결과물 두개 중 하나만 쓰면, 막혀서 멈추기 때문에,
+            사용하지 않는건 버리세요.</strong>
         quad:
             name: 절단기 (4단)
-            description: 도형을 4개로 나눈다. <strong>만약, 한 개만 사용하면 기계가 멈추니 나머지는 버릴 것</strong>
+            description: 도형을 4개로 나눕니다. <strong>만약, 한 개만 사용하면 기계가 멈추니 나머지는 버릴 것</strong>
 
     rotater:
         default:
             name: &rotater 회전기
-            description: 도형을 시계방향으로 90도 회전시킨다.
+            description: 도형을 시계방향으로 90도 회전시킵니다.
         ccw:
             name: 회전기 (반시계방향)
-            description: 도형을 반시계방향으로 90도 회전시킨다.
+            description: 도형을 반시계방향으로 90도 회전시킵니다.
 
     stacker:
         default:
             name: &stacker 스택커
-            description: 도형 2개를 쌓는다. 합칠 수가 없다면 오른쪽 도형이 왼쪽 도형 위에 놓아진다.
+            description: 도형 2개를 합칩니다. 합칠 수 없다면 오른쪽 도형이 왼쪽 도형 위에 놓입니다.
 
     mixer:
         default:
             name: &mixer 색 혼합기
-            description: 두가지 색을 섞어서 다른 색을 만든다.
+            description: 두가지 색을 섞어서 다른 색을 만듭니다.
 
     painter:
         default:
             name: &painter 도형 색칠기
-            description: &painter_desc 도형을 색소로 색칠한다.
+            description: &painter_desc 도형을 색소로 색칠합니다.
         double:
             name: 2단 도형 색칠기
-            description: 왼쪽에 입력되는 도형을 위에서 입력되는 색소로 색칠한다.
+            description: 왼쪽에 입력되는 도형을 위에서 입력되는 색소로 색칠합니다.
         quad:
             name: 4단 도형 색칠기
-            description: 도형의 4가지 분단을 각각 다른 색으로 색칠할 수 있다.
+            description: 도형의 4가지 분단을 각각 다른 색으로 색칠할 수 있습니다.
         mirrored:
             name: *painter
             description: *painter_desc
@@ -512,11 +515,11 @@ buildings:
     trash:
         default:
             name: &trash 휴지통
-            description: 양쪽에서 오는 모든 입력물을 버린다.
+            description: 양쪽에서 오는 모든 입력물을 버립니다.
 
         storage:
-            name: 저장소
-            description: 할당된 용량만큼 초과되는 도형을 저장한다.
+            name: &storage 저장소
+            description: 할당된 용량만큼 도형을 저장합니다.
 
 storyRewards:
     # Those are the rewards gained from completing the store
@@ -529,9 +532,8 @@ storyRewards:
         desc: <strong>회전기</strong>가 잠금 해제되었습니다! 이것은 도형을 시계방향으로 90도 회전 시킵니다.
 
     reward_painter:
-        title: 색칠기
-        desc: >-
-            The <strong>painter</strong> has been unlocked - Extract some color veins (just as you do with shapes) and combine it with a shape in the painter to color them!<br><br>PS: If you are colorblind, there is a <strong>color blind mode</strong> in the settings!
+        title: 페인터
+        desc: <strong>페인터</strong>가 잠금 해제되었습니다! 염료와 도형을 합쳐 색을 입혀보세요!<br><br>추신: 만약 색맹이라면, 설정에 <strong>색맹 모드</strong>가 있습니다!
 
     reward_mixer:
         title: 혼합기
@@ -555,7 +557,7 @@ storyRewards:
 
     reward_miner_chainable:
         title: 체인 추출기
-        desc: <strong>체인 추출기</strong>가 잠금 해제되었습니다! 체인 추출기는 <strong>자원을 다른 추출기로 전달하여</strong> 효율적으로 추출할 수 있게 합니다.
+        desc: <strong>체인 추출기</strong>가 잠금 해제되었습니다! 체인 추출기는 <strong>다른 추출기와 연결해서</strong> 효율적으로 추출할 수 있게 합니다.
 
     reward_underground_belt_tier_2:
         title: 터널 티어 II
